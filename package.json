@@ -1,0 +1,17 @@
+{
+  "name": "4_todo-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  }
+}
