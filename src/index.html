@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A Todo List app" />
+
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Script -->
+    <script type="module" src="js/controller.js"></script>
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo</h1>
+        <button class="btn btn-dark-mode" aria-label="Dark/Light theme">
+          <svg class="icon icon-theme">
+            <use href="img/icons.svg#icon-moon" />
+          </svg>
+        </button>
+      </header>
+      <main>
+        <form class="add-todo todo">
+          <div class="btn--round"></div>
+          <input
+            type="text"
+            class="add-todo__field"
+            placeholder="Create a new todo..."
+          />
+        </form>
+
+        <div class="todos-container">
+          <ul class="todos">
+            <!-- <li class="todo todo--completed">
+          <button class="btn btn-completed btn--round">
+            <svg class="icon icon-check">
+              <use href="img/icons.svg#icon-check" />
+            </svg>
+          </button>
+          <p class="todo__text">Complete online Javascript course</p>
+          <button class="btn btn-delete">
+            <svg class="icon icon-cross">
+              <use href="img/icons.svg#icon-cross" />
+            </svg>
+          </button>
+        </li>
+        <li class="todo">
+          <button class="btn btn-completed btn--round">
+            <svg class="icon icon-check">
+              <use href="img/icons.svg#icon-check" />
+            </svg>
+          </button>
+          <p class="todo__text">Jog around the park 3x</p>
+          <button class="btn btn-delete">
+            <svg class="icon icon-cross">
+              <use href="img/icons.svg#icon-cross" />
+            </svg>
+          </button>
+        </li>
+        <li class="todo">
+          <button class="btn btn-completed btn--round">
+            <svg class="icon icon-check">
+              <use href="img/icons.svg#icon-check" />
+            </svg>
+          </button>
+          <p class="todo__text">10 minutes meditation</p>
+          <button class="btn btn-delete">
+            <svg class="icon icon-cross">
+              <use href="img/icons.svg#icon-cross" />
+            </svg>
+          </button>
+        </li>
+        <li class="todo">
+          <button class="btn btn-completed btn--round">
+            <svg class="icon icon-check">
+              <use href="img/icons.svg#icon-check" />
+            </svg>
+          </button>
+          <p class="todo__text">Read for 1 hour</p>
+          <button class="btn btn-delete">
+            <svg class="icon icon-cross">
+              <use href="img/icons.svg#icon-cross" />
+            </svg>
+          </button>
+        </li>
+        <li class="todo">
+          <button class="btn btn-completed btn--round">
+            <svg class="icon icon-check">
+              <use href="img/icons.svg#icon-check" />
+            </svg>
+          </button>
+          <p class="todo__text">Pick up groceries</p>
+          <button class="btn btn-delete">
+            <svg class="icon icon-cross">
+              <use href="img/icons.svg#icon-cross" />
+            </svg>
+          </button>
+        </li>
+        <li class="todo">
+          <button class="btn btn-completed btn--round">
+            <svg class="icon icon-check">
+              <use href="img/icons.svg#icon-check" />
+            </svg>
+          </button>
+          <p class="todo__text">Complete Todo App on Frontend Mentor</p>
+          <button class="btn btn-delete">
+            <svg class="icon icon-cross">
+              <use href="img/icons.svg#icon-cross" />
+            </svg>
+          </button>
+        </li> -->
+          </ul>
+
+          <div class="todos-footer">
+            <p class="todos-left"><span>0</span> items left</p>
+
+            <div class="filter-buttons">
+              <button class="btn btn--active" data-filter="all">All</button>
+              <button class="btn" data-filter="active">Active</button>
+              <button class="btn" data-filter="completed">Completed</button>
+            </div>
+            <button class="btn btn-clear-completed">Clear Completed</button>
+          </div>
+        </div>
+
+        <p class="drag-drop-text">Drag and drop to reorder list</p>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/MayankMudgal"
+        >Mayank Mudgal</a
+      >.
+    </div>
+  </body>
+</html>
